@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PasteTube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            /* text-align: center; */
+        }
+        a {
+            margin: 0;
+            font-size: 2em;
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: skyblue;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #ccc;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="buttonstyle.css">
+    <script src="buttonscripts.js"></script>
+</head>
+<body>
+    <header>
+        <a href="error.html">PasteTube</a>
+        <p>The internet's favorite video pasting site.</p>
+    </header>
+    <main>
+        <video controls>
+            <source src="clip.mp4" type="video/mp4" controls>
+            Your browser does not support the video tag.
+        </video>
+    </main>
+    <footer>
+        <p>&copy; 2023 Video Viewer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
