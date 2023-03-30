@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>PasteTube</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,13 +18,17 @@
             padding: 10px;
             /* text-align: center; */
         }
+        header p
+        {
+            font-size: 1.2em;
+        }
         a {
             margin: 0;
             font-size: 2em;
             color: #fff;
             text-decoration: none;
         }
-        a:hover
+        header a:hover
         {
             color: skyblue;
         }
@@ -42,6 +49,42 @@
             text-align: center;
             padding: 10px;
         }
+        .like-dislike {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+            margin: 5px;
+            transition: color 0.2s;
+        }
+
+        button:hover {
+            color: skyblue;
+        }
+
+        button.like i:hover {
+            color: green;
+        }
+
+        button.dislike i {
+            color: red;
+        }
+        @media only screen and (max-width: 600px) {
+            main {
+                margin: 10px;
+                padding: 0;
+            }
+            video {
+                margin: 10px 0;
+            }
+        }
     </style>
     <link rel="stylesheet" href="buttonstyle.css">
     <script src="buttonscripts.js"></script>
@@ -57,8 +100,13 @@
             Your browser does not support the video tag.
         </video>
     </main>
+    <div class="like-dislike">
+        <button class="like"><ion-icon name="thumbs-up-outline"></ion-icon><br>15</button>
+        <button class="dislike"><ion-icon name="thumbs-down-outline"></ion-icon><br>1</button>
+    </div>
+
     <footer>
-        <p>&copy; 2023 Video Viewer. All rights reserved.</p>
+        <p>&copy; 2023 PasteTube. All rights reserved.</p>
     </footer>
 </body>
 </html>
