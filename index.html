@@ -16,10 +16,11 @@
             background-color: #333;
             color: #fff;
             padding: 10px;
-            /* text-align: center; */
+            display: flex;
+            justify-content: space-between; /* Align buttons to the right */
+            align-items: center; /* Vertically center items */
         }
-        header p
-        {
+        header p {
             font-size: 1.2em;
         }
         a {
@@ -28,8 +29,7 @@
             color: #fff;
             text-decoration: none;
         }
-        header a:hover
-        {
+        header a:hover {
             color: skyblue;
         }
         main {
@@ -76,6 +76,13 @@
         button.dislike i {
             color: red;
         }
+        .header-buttons {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            transition: 0.5;
+        }
+
         @media only screen and (max-width: 600px) {
             main {
                 margin: 10px;
@@ -91,12 +98,26 @@
 </head>
 <body>
     <header>
-        <a href="error.html">PasteTube</a>
-        <p>The internet's favorite video pasting site.</p>
+        <div>
+            <a href="error.html">PasteTube</a>
+            <p>The internet's favorite video pasting site.</p>
+        </div>
+        <div class="header-buttons">
+            <!-- Add your header buttons here -->
+            <a href="error.html" style="color: white;"class="header-button"> Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="error.html" style="color: white;"class="header-button"> Settings</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="error.html" style="color: white;"class="header-button"> Upload</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="tOs.html" style="color: white;"class="header-button"> Terms of Service</a>
+        </div>
     </header>
+    
+    
     <main>
-        <h2>Pasted by </h2>
-        <h1 style="color: #000;">sickkoolaidkid32</h1>
+        <h1 style="color: rgb(111, 185, 215);">dopeShot.mp4</h1>
+        <h2><u>Pasted by </u></h2>
+        <h1 style="color: #000;"><u>sickkoolaidkid32</u></h1>
         <video controls>
             <source src="clip.mp4" type="video/mp4" controls>
             Your browser does not support the video tag.
