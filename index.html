@@ -5,6 +5,8 @@
     <title>PasteTube</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
         body {
@@ -23,6 +25,10 @@
         header p {
             font-size: 1.2em;
         }
+        .title a
+        {
+            font-size: 3em;
+        }
         a {
             margin: 0;
             font-size: 2em;
@@ -36,6 +42,10 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 0 20px;
+        }
+        .vidtitle
+        {
+            font-size: 1.5em;
         }
         video {
             width: 100%;
@@ -98,11 +108,11 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
             <a href="error.html">PasteTube</a>
             <p>The internet's favorite video pasting site.</p>
         </div>
-        <div class="header-buttons">
+        <div class="header-buttons" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
             <!-- Add your header buttons here -->
             <a href="error.html" style="color: white;"class="header-button"> Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="error.html" style="color: white;"class="header-button"> Settings</a>
@@ -114,10 +124,13 @@
     </header>
     
     
-    <main>
-        <h1 style="color: rgb(111, 185, 215);">dopeShot.mp4</h1>
-        <h2><u>Pasted by </u></h2>
-        <h1 style="color: #000;"><u>sickkoolaidkid32</u></h1>
+    <main data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="600" data-aos-duration="800">
+        <div class="vidtitle">
+            <h1 style="color: rgb(111, 185, 215);">dopeShot.mp4</h1>
+        </div>
+        <h2>Game: <u>Roblox Arsenal</u></h2>
+        <h2>Pasted by </h2>
+        <h1 style="color: #6bf772;"><u>@sickkoolaidkid32</u></h1>
         <video controls>
             <source src="clip.mp4" type="video/mp4" controls>
             Your browser does not support the video tag.
@@ -125,11 +138,14 @@
     </main>
     <div class="like-dislike">
         <button class="like"><ion-icon name="thumbs-up-outline"></ion-icon><br>15</button>
-        <button class="dislike"><ion-icon name="thumbs-down-outline"></ion-icon><br>1</button>
+        <button class="dislike"><ion-icon name="thumbs-down-outline"></ion-icon><br>3</button>
     </div>
 
     <footer>
         <p>&copy; 2023 PasteTube. All rights reserved.</p>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
